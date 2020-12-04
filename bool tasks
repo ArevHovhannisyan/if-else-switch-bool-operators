@@ -1,0 +1,41 @@
+// bool is a logical data type in c++,which was get true or false values
+
+// Даны два целых числа:a,b Проверить истинность высказывания: «Каждое из чисел "a" и "b" нечетное».
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b;
+    cout << "a: ";
+    cin >> a;
+    cout << "b: ";
+    cin >> b;
+    
+    cout << (a % 2 != 0) & (b % 2 != 0) <<endl;
+    
+    return 0;
+}
+
+
+// Проверить истинность высказывания: «Среди трех данных целых чисел есть хотя бы одна пара совпадающих».
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    bool result;
+    
+    cout << "Enter a: ";
+    cin >> a;
+    cout << "Enter b: ";
+    cin >> b;
+    cout << "Enter c: ";
+    cin >> c;
+    
+    result = (a==b || b==c || c==a);
+    cout << result;
+    
+    return 0;
+}

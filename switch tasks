@@ -1,0 +1,44 @@
+// switch case in c++ is the same and very shorted version if/else.
+// switch is to compare the variable with other values.Switch was has to 'break'
+// operator what was finished the operation and going to other operation as long 
+// while it to meet in 'default' operator.
+
+// Составить расписание на неделю. Пользователь вводит порядковый номер дня недели
+// и у него на экране отображается, то, что запланировано на этот день.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter number for day: ";
+    cin >> n;
+    
+    switch(n)
+    {
+        case 1: 
+            cout << "Monday";
+            break;
+        case 2: 
+            cout << "Thuesday";
+            break;
+        case 3: 
+            cout << "Wednesday";
+            break;
+        case 4:
+            cout << "Thursday";
+            break;
+        case 5:
+            cout << "Friday";
+            break;
+        case 6:
+            cout << "Saturday";
+            break;
+        case 7:
+            cout << "Sunday";
+            break;
+            
+    }        
+    
+    return 0;
+}
